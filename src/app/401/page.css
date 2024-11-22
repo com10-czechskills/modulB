@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+}
+
+.unauth {
+    min-height: 65.7vh;
+    padding-top: 10vh;
+    display: grid;
+    align-items: center;
+}
+
+.unauth div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.unauth h1 {
+    font-weight: 800;
+    color: #131313;
+}
+
+.unauth h3 {
+    color: #333;
+    margin-bottom: 2rem;
+}

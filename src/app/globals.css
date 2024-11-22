@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/*======== BREAKPOINTS ========*/
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 450px) {
+}
+
+/*======== CONTAINER ========*/
+.container {
+  width: 100%;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 85vw;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 450px) {
+}
+
+/*======== Headings ========*/
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: #131313;
+}
+
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #131313;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: #E52330;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #393939;
+}
+
+p.sm {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  padding-top: 90px;
+}
+
+section.bg {
+  padding-top: 0;
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p.sm {
+    font-size: 15px;
+  }
+
+
+  section {
+    padding-top: 70px;
+  }
+
+  section.bg {
+    padding-top: 0;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 475px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+
+/*======== BUTTONS ========*/
+.btn {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+  transition: all 0.2s;
+  font-weight: 600;
+  color: #131313;
+}
+
+.btn-primary {
+  background-color: #E52330;
+  color: #fff;
+  border: 1px solid #E52330;
+}
+
+.btn-primary:hover {
+  background-color: #d51a26;
+}
+
+.btn-secondary {
+  background-color: #e6c200;
+  color: #000;
+  border: 1px solid #e6c200;
+}
+
+.btn-secondary:hover {
+  background-color: #ccac00;
+  border-color: #ccac00;
+}
+
+.btn-primary-outline {
+  background-color: transparent;
+  border: 2px solid #E52330;
+  color: #E52330;
+}
+
+.btn-primary-outline:hover {
+  background-color: #E52330;
+  border: 2px solid #E52330;
+  color: #fff;
+}
+
+.btn-simple {
+  color: #000;
+}

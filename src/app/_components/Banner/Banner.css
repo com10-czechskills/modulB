@@ -1,0 +1,29 @@
+.banner {
+    min-height: 180px;
+    margin-top: 88px;
+    background: url('/images/banner-bg.webp') no-repeat center center;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.banner h2 {
+    color: #fff;
+}
+
+.banner .paths {
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1026px) {
+    .banner {
+        margin-top: 76px;
+    }
+}

@@ -1,0 +1,98 @@
+/* Ensure the navbar stays fixed at the top */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+}
+
+/* Background color change on scroll */
+.nav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 5px 6px -1px rgba(229, 35, 48, 0.25);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Logo */
+.nav-logo {
+    min-height: 34px;
+    max-height: 34px;
+    cursor: pointer;
+}
+
+/* Default styles for the navigation links */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+    color: #131313;
+}
+
+nav ul li span {
+    transition: color 0.15s ease-in-out;
+}
+
+nav ul li span:hover {
+    color: #E52330;
+}
+
+/* Burger menu styles for small screens */
+nav .burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+nav .burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #131313;
+}
+
+/* Responsive styles */
+@media (max-width: 1280px) {
+    nav .burger-menu {
+        display: flex;
+    }
+
+    nav ul.nav-links {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        max-height: 0;
+        margin: 0 auto;
+        opacity: 0.6;
+        width: 100%;
+        display: flex; /* Added display property to improve flexbox usage */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        gap: 50px;
+        transform: translateY(-10px); /* Slight initial translate to enhance effect */
+        transition: max-height 0.3s ease-in-out, padding 0.4s ease-in-out, opacity 0.3s ease-in-out, transform 0.4s ease;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.4);
+        overflow: hidden; /* Ensures content is hidden when max-height is 0 */
+    }
+
+    nav ul.nav-links.open {
+        max-height: 90vh;
+        padding: 50px 0;
+        opacity: 1;
+        transform: translateY(0); /* Restores translate position to default */
+    }
+}
